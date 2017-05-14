@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="demo">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aplicación de Pruebas de Directivas</title>
+    <!--CSS-->
+    <link href="libs/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="libs/fontawesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="content/css/style.css" rel="stylesheet" />
+    <!--JS-->
+    <script src="libs/jquery/js/jquery-3.2.1.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.js"></script>
+    <script src="libs/angular/js/angular.min.js"></script>
+</head>
+
+<body>
+    <div id="capaDemo">
+        <div ng-controller="MainCtrl">
+            <div class="row">
+                <div class="col-md-4">
+                    <button type="button" ng-click="btnClick()" class="btn btn-danger">Contenido</button>
+                </div>
+                <div class="col-md-8">
+                     <sb-textarea contenido="Nombre" longitud="5" limitacion="false" altura="2"></sb-textarea>
+                     <sb-textarea id="t1" longitud="3" limitacion="true" altura="4"></sb-textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app/directive.js"></script>
+    <script src="app/app.js"></script>
+</body>
+</html>

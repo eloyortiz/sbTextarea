@@ -1,0 +1,20 @@
+<div class="">
+    <div class="col-md-12">
+        <div class="form-group">
+            <p>
+             <span>Longitud: {{Longitud}}</span>
+             <span>Limitacion: {{Limitacion}}</span>
+             </p>
+           
+            <textarea class="form-control"
+                ng-class="{'bg-danger': Contenido.length > Longitud}"
+                ng-model="Contenido"
+                rows="{{Altura}}"
+                ></textarea>
+            <p class="text-left">
+                <span class="small text-danger text-blink" ng-show="Contenido.length > Longitud">* Debe reducir el texto</span>
+                <span class="small pull-right">Caracteres restantes: {{Longitud - Contenido.length}}</span>
+            </p>
+        </div>
+    </div>
+</div>
